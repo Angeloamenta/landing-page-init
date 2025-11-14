@@ -18,7 +18,7 @@ export default function Navbar() {
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="shrink-0">
-                        <Link href="/" className="text-[var(--font-size-xl)] font-[var(--font-weight-bold)]">
+                        <Link href="/" className="text-xl font-[var(--font-weight-bold)]">
                             Logo
                         </Link>
                     </div>
@@ -40,7 +40,7 @@ export default function Navbar() {
                     <div className="hidden md:block">
                         <Link
                             href="#contact"
-                            className="px-[var(--spacing-base)] py-[var(--spacing-sm)] bg-[var(--color-foreground)] text-[var(--color-background)] rounded-[var(--radius-base)]"
+                            className="px-[var(--spacing-base)] py-[var(--spacing-sm)] bg-[var(--color-foreground)] text-[var(--color-background)] rounded-[var(--rounded-base)]"
                         >
                             Contattaci
                         </Link>
@@ -92,7 +92,7 @@ export default function Navbar() {
                             ))}
                             <Link
                                 href="#contact"
-                                className="px-[var(--spacing-base)] py-[var(--spacing-sm)] bg-[var(--color-foreground)] text-[var(--color-background)] rounded-[var(--radius-base)] text-center"
+                                className="px-[var(--spacing-base)] py-[var(--spacing-sm)] bg-[var(--color-foreground)] text-[var(--color-background)] rounded-[var(--rounded-base)] text-center"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Contattaci

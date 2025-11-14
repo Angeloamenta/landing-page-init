@@ -34,19 +34,19 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-[var(--spacing-lg)] mb-[var(--spacing-lg)]">
                     {/* Colonna 1: Logo e testo */}
                     <div>
-                        <h3 className="text-[var(--font-size-xl)] font-[var(--font-weight-bold)] mb-[var(--spacing-base)]">Logo</h3>
-                        <p className="text-[var(--color-foreground-muted)] text-[var(--font-size-sm)]">
+                        <h3 className="text-xl font-[var(--font-weight-bold)] mb-[var(--spacing-base)]">Logo</h3>
+                        <p className="text-[var(--color-foreground-muted)] text-sm">
                             Breve descrizione dell'azienda o del servizio offerto.
                         </p>
                     </div>
 
                     {/* Colonna 2: Menu 1 */}
                     <div>
-                        <h4 className="font-[var(--font-weight-semibold)] mb-[var(--spacing-base)]">Navigazione</h4>
+                        <h4 className="font-semibold mb-[var(--spacing-base)]">Navigazione</h4>
                         <ul className="space-y-[var(--spacing-sm)]">
                             {footerMenu1.map((item) => (
                                 <li key={item.href}>
-                                    <Link href={item.href} className="text-[var(--color-foreground-muted)] hover:text-[var(--color-background)] text-[var(--font-size-sm)]">
+                                    <Link href={item.href} className="text-[var(--color-foreground-muted)] hover:text-[var(--color-background)] text-sm">
                                         {item.name}
                                     </Link>
                                 </li>
@@ -56,11 +56,11 @@ export default function Footer() {
 
                     {/* Colonna 3: Menu 2 */}
                     <div>
-                        <h4 className="font-[var(--font-weight-semibold)] mb-[var(--spacing-base)]">Legale</h4>
+                        <h4 className="font-semibold mb-[var(--spacing-base)]">Legale</h4>
                         <ul className="space-y-[var(--spacing-sm)]">
                             {footerMenu2.map((item) => (
                                 <li key={item.href}>
-                                    <Link href={item.href} className="text-[var(--color-foreground-muted)] hover:text-[var(--color-background)] text-[var(--font-size-sm)]">
+                                    <Link href={item.href} className="text-[var(--color-foreground-muted)] hover:text-[var(--color-background)] text-sm">
                                         {item.name}
                                     </Link>
                                 </li>
@@ -70,11 +70,11 @@ export default function Footer() {
 
                     {/* Colonna 4: Menu 3 e Social */}
                     <div>
-                        <h4 className="font-[var(--font-weight-semibold)] mb-[var(--spacing-base)]">Risorse</h4>
+                        <h4 className="font-semibold mb-[var(--spacing-base)]">Risorse</h4>
                         <ul className="space-y-[var(--spacing-sm)] mb-6">
                             {footerMenu3.map((item) => (
                                 <li key={item.href}>
-                                    <Link href={item.href} className="text-[var(--color-foreground-muted)] hover:text-[var(--color-background)] text-[var(--font-size-sm)]">
+                                    <Link href={item.href} className="text-[var(--color-foreground-muted)] hover:text-[var(--color-background)] text-sm">
                                         {item.name}
                                     </Link>
                                 </li>
@@ -98,7 +98,7 @@ export default function Footer() {
                 </div>
 
                 {/* Copyright */}
-                <div className="border-t border-[var(--color-neutral-800)] pt-[var(--spacing-lg)] text-center text-[var(--color-foreground-muted)] text-[var(--font-size-sm)]">
+                <div className="border-t border-[var(--color-neutral-800)] pt-[var(--spacing-lg)] text-center text-[var(--color-foreground-muted)] text-sm">
                     <p>&copy; {new Date().getFullYear()} Nome Azienda. Tutti i diritti riservati.</p>
                 </div>
             </div>
