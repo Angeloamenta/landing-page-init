@@ -13,12 +13,12 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
-        <nav className="fixed top-0 left-0 right-0 bg-white border-b z-50">
-            <div className="max-w-7xl mx-auto px-4">
+        <nav className="fixed top-0 left-0 right-0 bg-[var(--color-background)] border-b border-[var(--color-border)] z-50">
+            <div className="max-w-7xl mx-auto px-[var(--spacing-base)]">
                 <div className="flex items-center justify-between h-16">
                     {/* Logo */}
                     <div className="shrink-0">
-                        <Link href="/" className="text-xl font-bold">
+                        <Link href="/" className="text-[var(--font-size-xl)] font-[var(--font-weight-bold)]">
                             Logo
                         </Link>
                     </div>
@@ -29,7 +29,7 @@ export default function Navbar() {
                             <Link
                                 key={item.href}
                                 href={item.href}
-                                className="hover:text-gray-600"
+                                className="hover:text-[var(--color-foreground-muted)]"
                             >
                                 {item.name}
                             </Link>
@@ -40,7 +40,7 @@ export default function Navbar() {
                     <div className="hidden md:block">
                         <Link
                             href="#contact"
-                            className="px-4 py-2 bg-black text-white rounded"
+                            className="px-[var(--spacing-base)] py-[var(--spacing-sm)] bg-[var(--color-foreground)] text-[var(--color-background)] rounded-[var(--radius-base)]"
                         >
                             Contattaci
                         </Link>
@@ -78,13 +78,13 @@ export default function Navbar() {
 
                 {/* Menu Mobile */}
                 {isMenuOpen && (
-                    <div className="md:hidden py-4 border-t">
-                        <div className="flex flex-col space-y-4">
+                    <div className="md:hidden py-[var(--spacing-base)] border-t border-[var(--color-border)]">
+                        <div className="flex flex-col space-y-[var(--spacing-base)]">
                             {menuItems.map((item) => (
                                 <Link
                                     key={item.href}
                                     href={item.href}
-                                    className="hover:text-gray-600"
+                                    className="hover:text-[var(--color-foreground-muted)]"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {item.name}
@@ -92,7 +92,7 @@ export default function Navbar() {
                             ))}
                             <Link
                                 href="#contact"
-                                className="px-4 py-2 bg-black text-white rounded text-center"
+                                className="px-[var(--spacing-base)] py-[var(--spacing-sm)] bg-[var(--color-foreground)] text-[var(--color-background)] rounded-[var(--radius-base)] text-center"
                                 onClick={() => setIsMenuOpen(false)}
                             >
                                 Contattaci

@@ -29,24 +29,24 @@ const socialLinks = [
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-900 text-white py-12 px-4">
+        <footer className="bg-[var(--color-neutral-900)] text-[var(--color-background)] py-[var(--spacing-xl)] px-[var(--spacing-base)]">
             <div className="max-w-7xl mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-[var(--spacing-lg)] mb-[var(--spacing-lg)]">
                     {/* Colonna 1: Logo e testo */}
                     <div>
-                        <h3 className="text-xl font-bold mb-4">Logo</h3>
-                        <p className="text-gray-400 text-sm">
+                        <h3 className="text-[var(--font-size-xl)] font-[var(--font-weight-bold)] mb-[var(--spacing-base)]">Logo</h3>
+                        <p className="text-[var(--color-foreground-muted)] text-[var(--font-size-sm)]">
                             Breve descrizione dell'azienda o del servizio offerto.
                         </p>
                     </div>
 
                     {/* Colonna 2: Menu 1 */}
                     <div>
-                        <h4 className="font-semibold mb-4">Navigazione</h4>
-                        <ul className="space-y-2">
+                        <h4 className="font-[var(--font-weight-semibold)] mb-[var(--spacing-base)]">Navigazione</h4>
+                        <ul className="space-y-[var(--spacing-sm)]">
                             {footerMenu1.map((item) => (
                                 <li key={item.href}>
-                                    <Link href={item.href} className="text-gray-400 hover:text-white text-sm">
+                                    <Link href={item.href} className="text-[var(--color-foreground-muted)] hover:text-[var(--color-background)] text-[var(--font-size-sm)]">
                                         {item.name}
                                     </Link>
                                 </li>
@@ -56,11 +56,11 @@ export default function Footer() {
 
                     {/* Colonna 3: Menu 2 */}
                     <div>
-                        <h4 className="font-semibold mb-4">Legale</h4>
-                        <ul className="space-y-2">
+                        <h4 className="font-[var(--font-weight-semibold)] mb-[var(--spacing-base)]">Legale</h4>
+                        <ul className="space-y-[var(--spacing-sm)]">
                             {footerMenu2.map((item) => (
                                 <li key={item.href}>
-                                    <Link href={item.href} className="text-gray-400 hover:text-white text-sm">
+                                    <Link href={item.href} className="text-[var(--color-foreground-muted)] hover:text-[var(--color-background)] text-[var(--font-size-sm)]">
                                         {item.name}
                                     </Link>
                                 </li>
@@ -70,22 +70,22 @@ export default function Footer() {
 
                     {/* Colonna 4: Menu 3 e Social */}
                     <div>
-                        <h4 className="font-semibold mb-4">Risorse</h4>
-                        <ul className="space-y-2 mb-6">
+                        <h4 className="font-[var(--font-weight-semibold)] mb-[var(--spacing-base)]">Risorse</h4>
+                        <ul className="space-y-[var(--spacing-sm)] mb-6">
                             {footerMenu3.map((item) => (
                                 <li key={item.href}>
-                                    <Link href={item.href} className="text-gray-400 hover:text-white text-sm">
+                                    <Link href={item.href} className="text-[var(--color-foreground-muted)] hover:text-[var(--color-background)] text-[var(--font-size-sm)]">
                                         {item.name}
                                     </Link>
                                 </li>
                             ))}
                         </ul>
-                        <div className="flex space-x-4">
+                        <div className="flex space-x-[var(--spacing-base)]">
                             {socialLinks.map((social) => (
                                 <Link
                                     key={social.name}
                                     href={social.href}
-                                    className="text-gray-400 hover:text-white"
+                                    className="text-[var(--color-foreground-muted)] hover:text-[var(--color-background)]"
                                     aria-label={social.name}
                                 >
                                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -98,7 +98,7 @@ export default function Footer() {
                 </div>
 
                 {/* Copyright */}
-                <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <div className="border-t border-[var(--color-neutral-800)] pt-[var(--spacing-lg)] text-center text-[var(--color-foreground-muted)] text-[var(--font-size-sm)]">
                     <p>&copy; {new Date().getFullYear()} Nome Azienda. Tutti i diritti riservati.</p>
                 </div>
             </div>

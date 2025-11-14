@@ -3,25 +3,25 @@
 :root {
   /* ===== COLORI BASE ===== */
   /* Primary - Colore principale del brand */
-  --color-primary: #3b82f6;
+  --color-primary: #d90429;
   --color-primary-hover: #2563eb;
   --color-primary-light: #dbeafe;
   --color-primary-dark: #1e40af;
 
   /* Secondary - Colore secondario */
-  --color-secondary: #8b5cf6;
+  --color-secondary: #ef233c;
   --color-secondary-hover: #7c3aed;
   --color-secondary-light: #ede9fe;
   --color-secondary-dark: #5b21b6;
 
   /* Accent - Colore di accento */
-  --color-accent: #f59e0b;
+  --color-accent: edf2f4;
   --color-accent-hover: #d97706;
   --color-accent-light: #fef3c7;
   --color-accent-dark: #b45309;
 
   /* Neutral - Colori neutri */
-  --color-neutral-50: #fafafa;
+  --color-neutral-50: #edf2f4;
   --color-neutral-100: #f5f5f5;
   --color-neutral-200: #e5e5e5;
   --color-neutral-300: #d4d4d4;
@@ -51,8 +51,8 @@
   --color-info-dark: #2563eb;
 
   /* Background & Foreground */
-  --color-background: #ffffff;
-  --color-foreground: #171717;
+  --color-background: #edf2f4;
+  --color-foreground: #2b2d42;
   --color-background-muted: #fafafa;
   --color-foreground-muted: #737373;
 
@@ -153,7 +153,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-title);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-tight);
-  color: var(--color-foreground);
 }
 
 h1 { font-size: var(--font-size-h1); }
@@ -168,5 +167,4 @@ p {
   font-family: var(--font-body);
   font-size: var(--font-size-base);
   line-height: var(--line-height-relaxed);
-  color: var(--color-foreground);
 }
