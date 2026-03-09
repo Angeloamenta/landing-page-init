@@ -13,8 +13,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Landing-Ai",
-  description: "Landing-Ai landing page",
+  title: "PRISM AI | The Future of Intelligent Design",
+  description: "Crafting the next generation of digital products through artificial intelligence and architectural design.",
 };
 
 export default function RootLayout({ children }) {
