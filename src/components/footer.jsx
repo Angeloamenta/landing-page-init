@@ -43,7 +43,6 @@ export default function Footer() {
                     <div className="w-full text-center relative z-10 flex flex-col h-full justify-between">
 
                         <div>
-                            <h3 className="text-xs font-semibold tracking-widest uppercase mb-10 text-white/50">Ideology</h3>
                             <h2 className="text-3xl font-medium tracking-tight text-white mb-6">Build the<br />Future.</h2>
                         </div>
 
