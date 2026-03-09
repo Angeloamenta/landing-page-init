@@ -10,15 +10,19 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto px-6 py-6">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-2 text-xl tracking-tight transition-opacity hover:opacity-80">
-                        <Image
-                            src="/logo-white.svg"
-                            alt="Logo"
-                            width={170}
-                            height={170}
-                            className="w-15 h-15"
-                        />
-                        {/* <span className="font-medium text-[1.3rem] leading-none mt-1">Landing AI</span> */}
+                    <Link href="/" className="flex items-center transition-opacity hover:opacity-80">
+                        {/* Logo SVG — Prisma Neurale Geometrico per l'AI tech */}
+                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            {/* Struttura esterna wireframe in trasparenza */}
+                            <path d="M19 4L34 12V26L19 34L4 26V12L19 4Z" stroke="white" strokeWidth="1" strokeOpacity="0.2" />
+                            {/* Il nucleo solido (il prodotto AI finito) */}
+                            <path d="M19 12L27 16.5V23.5L19 28L11 23.5V16.5L19 12Z" fill="white" />
+                            {/* Connessioni tecniche sottili */}
+                            <path d="M19 4V12" stroke="white" strokeWidth="1" strokeOpacity="0.3" />
+                            <path d="M4 12L11 16.5" stroke="white" strokeWidth="1" strokeOpacity="0.3" />
+                            <path d="M34 12L27 16.5" stroke="white" strokeWidth="1" strokeOpacity="0.3" />
+                            <path d="M19 34V28" stroke="white" strokeWidth="1" strokeOpacity="0.3" />
+                        </svg>
                     </Link>
 
                     {/* Menu Navigation */}
