@@ -38,9 +38,9 @@ export default function Navbar() {
 
                     {/* Menu Navigation */}
                     <div className="hidden md:flex items-center gap-8 text-[0.9rem] font-medium tracking-wide text-white/80">
-                        <Link href="#about" className="hover:text-white transition-colors">Chi Siamo</Link>
-                        <Link href="#projects" className="hover:text-white transition-colors">Progetti</Link>
-                        <Link href="#contact" className="hover:text-white transition-colors">Contatti</Link>
+                        <Link href="#about" className="hover:text-white transition-colors">About</Link>
+                        <Link href="#projects" className="hover:text-white transition-colors">Projects</Link>
+                        <Link href="#contact" className="hover:text-white transition-colors">Contact</Link>
                     </div>
                 </div>
             </div>
